@@ -39,7 +39,9 @@ $breakpoint: (
 }
 
 .container {
-    outline: 1px solid blue;
-    overflow: hidden;
-    padding: 10px;
+    @if $dev == true {
+        outline: 1px solid blue;
+        overflow: hidden;
+        padding: 10px;
+    }  
 }
