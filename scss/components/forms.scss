@@ -13,20 +13,20 @@ $form-label-font-size: 14px !default;
 $form-label-margin-bottom: 4px !default;
 
 
-@mixin placeholder($color) {
+@mixin placeholder($color, $opacity: 1) {
     &::-webkit-input-placeholder {
         color: $color;
-        opacity: 1;
+        opacity: $opacity;
         @content;
     }
     &::-moz-placeholder {
         color: $color;
-        opacity: 1;
+        opacity: $opacity;
         @content;
     }
     &:-ms-input-placeholder {
         color: $color;
-        opacity: 1;
+        opacity: $opacity;
         @content;
     }
 }
