@@ -31,6 +31,13 @@ $form-label-margin-bottom: 4px !default;
     }
 }
 
+@mixin form-variants($color, $bg, $border-color) {
+    color: $color;
+    background-color: $bg;
+    border-color: $border-color;
+
+}
+
 .form {
 	&-group {
 		margin-bottom: $form-margin-bottom;
